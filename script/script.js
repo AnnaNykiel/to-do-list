@@ -33,14 +33,14 @@ const bindEvents = () => {
 
     removeButtons.forEach((removeButton, index) => {
         removeButton.addEventListener("click", () => {
-            toggleTaskDone(index);
+            removeTask(index);
         });
     });
 
     const toggleDoneButtons = document.querySelectorAll(".js-done");
     toggleDoneButtons.forEach((toggleDoneButtons, index) => {
         toggleDoneButtons.addEventListener("click", () => {
-            removeTask(index);
+            toggleTaskDone(index);
         });
     });
 };
@@ -61,8 +61,8 @@ const render = () => {
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
 
-};
 bindEvents();
+};
 
 const onFormSubmit = (event) => {
     event.preventDefault();
