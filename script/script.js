@@ -10,10 +10,12 @@
         },
     ];
 
-    const addNewTask = (newTaskContent) =>
+    const addNewTask = (newTaskContent) => {
         tasks.push({
-            content: newTaskContent , })
+            content: newTaskContent });
             render();
+    }
+        
     
     
 };
@@ -80,9 +82,9 @@ const init = () => {
 
     const form = document.querySelector(".js-form");
 
-    init();
-
     form.addEventListener("submit", onFormSubmit);
+
+    init();
 };
 
 
