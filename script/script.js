@@ -12,9 +12,10 @@
 
     const addNewTask = (newTaskContent) =>
         tasks.push({
-            content: newTaskContent
-        });
-    render();
+            content: newTaskContent , })
+            render();
+    
+    
 };
 
 const removeTask = (taskIndex) => {
@@ -42,7 +43,7 @@ const bindEvents = () => {
             removeTask(index);
         });
     });
-}
+};
 
 const render = () => {
     let htmlString = "";
