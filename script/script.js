@@ -24,7 +24,7 @@ const removeTask = (taskIndex) => {
 };
 
 const toggleTaskDone = (taskIndex) => {
-    task[taskIndex].done = !task[taskIndex].done;
+    tasks[taskIndex].done = !tasks[taskIndex].done;
     render();
 };
 
