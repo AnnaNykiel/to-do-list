@@ -15,7 +15,6 @@
             content: newTaskContent });
             render();
     
-        
     
 };
 
@@ -83,6 +82,6 @@ const init = () => {
 
     form.addEventListener("submit", onFormSubmit);
     
-
+};
     init();
 }
