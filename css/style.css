@@ -10,4 +10,21 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #eee;
+    word-break: break-word;
+}
+
+.section {
+    margin : 10px 0px;
+    background-color: white;
+    box-shadow: 0 px 0 px 5px #ddd;
+    
+}
+
+.section_header {
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+    
 }
