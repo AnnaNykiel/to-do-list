@@ -26,8 +26,18 @@ background: hsl(120, 61%, 34%);
 }
 
 .task_button--remove {
-
+background: hsl(348, 83% 47%);
 }
+
+.task_button--remove:hover {
+    background:  hsl(348, 83%, 52%);
+}
+
+.task_buttton--remove:active {
+    background: hsl(348, 83%, 57%);
+}
+
+
 
 .task_content-done {
 text-decoration: line-through;
