@@ -1,4 +1,4 @@
-{
+
     const tasks = [];
 
 const removeTask = (taskIndex) => {
@@ -41,13 +41,13 @@ const render = () => {
     for (const task of tasks) {
         tasksListHTMLContent += `
         <li 
-        class="tasks_item js-task"
+        class="tasks__item js-task"
         >
-        <button class="tasks_button tasks_button--toggleDone js-toggleDone">
+        <button class="tasks__button tasks__button--toggleDone js-toggleDone">
         ${task.done ? "✔️" : "" } 
         </button>
-        <span class="tasks-content${ task.done ? " tasks_content--done" : ""}">${task.content} </span>
-        <button class="tasks_button tasks_button--remove js-remove">
+        <span class="tasks-content${ task.done ? " tasks__content--done" : ""}">${task.content} </span>
+        <button class="tasks__button tasks__button--remove js-remove">
         🗑️
         </button>
         </li>
