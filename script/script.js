@@ -13,7 +13,8 @@ const toggleTaskDone = (taskIndex) => {
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
-            content: newTaskContent });
+            content: newTaskContent ,
+       done:false,  });
             render();
 };
 
