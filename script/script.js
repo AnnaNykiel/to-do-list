@@ -30,7 +30,7 @@ const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
     toggleDoneButtons.forEach((toggleDoneButtons, taskIndex) => {
         toggleDoneButtons.addEventListener("click", () => {
-            toggleTaskDone(index);
+            toggleTaskDone(taskIndex);
         });
     });
 };
