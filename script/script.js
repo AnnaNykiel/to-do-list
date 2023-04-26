@@ -1,4 +1,4 @@
-
+{ 
     const tasks = [];
 
 const removeTask = (taskIndex) => {
