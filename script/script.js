@@ -26,6 +26,7 @@ const bindRemoveEvents = () => {
             removeTask(taskIndex);
         });
     });
+};
 const bindToggleDoneEvents = () => {
 const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
