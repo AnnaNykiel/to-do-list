@@ -50,3 +50,7 @@ text-decoration: line-through;
     height: 30px;
     padding: 0px;
 }
+
+.tasks__item--hidden {
+    display: none;
+}
