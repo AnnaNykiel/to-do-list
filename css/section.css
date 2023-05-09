@@ -1,13 +1,12 @@
 .section {
-    margin : 10px 0px;
+    margin: 10px 0px;
     background-color: white;
     box-shadow: 0 px 0 px 5px #ddd;
-    
-}
 
+}
 .section__header {
-    display:grid;
-    grid-template-columns: auto auto ;
+    display: grid;
+    grid-template-columns: auto auto;
     grid-gap: 20px;
     justify-content: space-between;
     align-items: center;
@@ -22,10 +21,10 @@
 }
 
 .section__body {
-    padding: 20px; 
+    padding: 20px;
 }
 
 .section__title {
-    font-size:20px;
+    font-size: 20px;
     margin: 0px;
 }

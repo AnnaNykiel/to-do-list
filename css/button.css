@@ -1,12 +1,11 @@
 .buttons {
     display:flex;
     flex-wrap: wrap;
-};
-
+}
 
 .buttons__button:hover {
     color: hsl(180 , 100% , 35%);
-};
+}
 
 .buttons__button {
     color: teal;
@@ -14,7 +13,7 @@
     border: none;
     margin: 0 0 0 20 px ;
     transition: color 0.3s;
-};
+}
 
 @media(width:797px){
     .buttons__button {
@@ -25,9 +24,7 @@
 
 .buttons__button:disabled {
     color: #ccc;
-};
-
-
+}
 
 @media (max-width: 767px) {
 .buttons__button {
