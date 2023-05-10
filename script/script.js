@@ -84,11 +84,11 @@
     };
 
     const renderButtons = () => {
-        const buttonsElment = document.querySelector("js-buttons");
+        const buttonsElement = document.querySelector("js-buttons");
         if (!tasks.length) {
             buttonsElement.innerHTML = "";
             return;
-        }
+        };
     
     buttonsElement.innerHTML = `
     <button class="buttons__button js-toggleHideDoneTasks">
