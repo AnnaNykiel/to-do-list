@@ -7,7 +7,6 @@
             ...tasks.slice(0, taskIndex),
             ...tasks.slice(taskIndex + 1),
         ];
-
         render();
     };
 
@@ -15,6 +14,7 @@
         tasks = [
             ...tasks.slice(0, taskIndex),
             {
+                ...tasks[taskIndex],
                 done: !tasks[taskIndex].done,
             },
             ...tasks.slice(taskIndex + 1),
@@ -25,9 +25,8 @@
 
     const addNewTask = (newTaskContent) => {
         tasks = [
-            ...tasks, { content: newTaskContent }]
+            ...tasks, { content: newTaskContent }];
         render();;
-
     };
 
     const markAllTasksDone = () => {
@@ -79,12 +78,12 @@
         </li>
         `;
 
-        const tasksElement = document.querySelector("js-tasks");
-        tasksElement.innerHTML = task.map(taskToHTML).join("");
+        const tasksElement = document.querySelector(".js-tasks");
+        tasksElement.innerHTML = tasks.map(taskToHTML).join("");
     };
 
     const renderButtons = () => {
-        const buttonsElement = document.querySelector("js-buttons");
+        const buttonsElement = document.querySelector(".js-buttons");
         if (!tasks.length) {
             buttonsElement.innerHTML = "";
             return;
@@ -101,11 +100,11 @@
 };
 
 const bindButtonsEvents = () => {
-    const MarkAllDoneButton = document.querySelector("js-markAllDone");
+    const MarkAllDoneButton = document.querySelector(".js-markAllDone");
     if (MarkAllDoneButton) {
         MarkAllDoneButton.addEventListener("click", markAllTasksDone);
     }
-    const toggleHideDoneTasksButton = document.querySelecto("js-toggleHideDoneTasks");
+    const toggleHideDoneTasksButton = document.querySelecto(".js-toggleHideDoneTasks");
     if (toggleHideDoneTasksButton) {
         toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
     }
